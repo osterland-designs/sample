@@ -1,0 +1,58 @@
+#pdg {
+  background: url("../img/backgroundpdg.JPG"),
+    radial-gradient(rgb(114, 114, 114), rgb(8, 8, 8));
+  background-size: 200%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  #pdg {
+    background-size: 400%;
+  }
+}
+@media screen and (max-width: 620px) {
+  #pdg {
+    background-size: 500%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #pdg {
+    background-size: 1300%;
+    background-position-y: 20%;
+  }
+}
+.show {
+  max-height: 94vh;
+}
+#carouselExampleControls {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  width: 250%;
+  max-width: 1000px;
+  margin: 30px;
+  transform: translateX(200%);
+  animation: startload 2.2s ease forwards 0.5s;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.sdw {
+  text-shadow: 1px 1px rgb(8, 8, 8);
+}
+
+h2 span {
+  font-weight: light;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  #carouselExampleControls {
+    grid-column: 2/3;
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+#wdg {
+  background: url("../img/compu.jpg"),
+    radial-gradient(rgb(114, 114, 114), rgb(8, 8, 8));
+  background-size: 200%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+@media screen and (max-width: 1800px) {
+  #wdg {
+    background-size: 200%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #wdg {
+    background-size: 400%;
+  }
+}
+@media screen and (max-width: 620px) {
+  #wdg {
+    background-size: 600%;
+  }
+}
+@media screen and (max-width: 370px) {
+  #wdg {
+    background-size: 1300%;
+    background-position-y: 20%;
+  }
+}
+.linkshowroom {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  min-height: 400px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+  transform: translateX(200%);
+  animation: startload 2.2s ease forwards 0.5s;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    padding: 10px 50px;
+    font-weight: bolder;
+    border-radius: 20px;
+  }
+}
+.linkshowroom a:hover {
+  color: white;
+  background: rgba(128, 128, 128, 0.7);
+}
+@media screen and (max-width: 900px) {
+  .linkshowroom {
+    grid-column: 2/3;
+    width: 100%;
+  }
+}

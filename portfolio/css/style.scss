@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  // border: 1px solid red;
+}
+body {
+  background: radial-gradient(rgb(114, 114, 114), rgb(8, 8, 8));
+  overflow-x: hidden;
+  color: rgb(240, 227, 216);
+}
+main {
+  height: 91vh;
+  top: 6vh;
+}
+
+h2 {
+  font-size: 6rem;
+  font-family: "Lobster", cursive;
+}
+h3 {
+  font-size: 3rem;
+  font-family: "Lobster", cursive;
+}
+p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+}
+footer {
+  margin-top: 2em;
+  min-height: 2vh;
+  grid-column: 1/6;
+  grid-row: 5/6;
+  p {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: light;
+  }
+}
+.spate {
+  font-weight: light;
+  font-size: 3rem;
+}
+
+@import "nav";
+@import "home";
+@import "pdg";
+@import "wdg";
